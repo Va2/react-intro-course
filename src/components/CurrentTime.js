@@ -13,8 +13,19 @@ function CurrentTime() {
         timeOfDay = "night"
     }
 
+    const styles = {
+        color: "#FF8C00",
+        backgroundColor: "#FF2D00",
+        fontSize: 17, // px default
+        width: "100%", // px, em, %, ... "STRING"
+        height: "50px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    }
+
     return (
-        <h4 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}!</h4>
+        <h4 style={styles}>Good {timeOfDay}!</h4>
     )
 }
 
