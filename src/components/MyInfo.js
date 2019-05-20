@@ -1,9 +1,12 @@
 import React from 'react';
 
 function MyInfo() {
+    const firstName = "John";
+    const lastName = "Doe";
+
     return (
         <div>
-            <h4>John Doe</h4>
+            <h4>{firstName + ' ' + lastName}</h4>
             <p>Junior Web Developer</p>
             <ol>
                 <li>ReactJS</li>
