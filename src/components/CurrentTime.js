@@ -14,7 +14,7 @@ function CurrentTime() {
     }
 
     return (
-        <h4>Good {timeOfDay}!</h4>
+        <h4 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}!</h4>
     )
 }
 
