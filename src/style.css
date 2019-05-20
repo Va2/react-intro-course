@@ -13,3 +13,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.contact-card {
+    width: 500px;
+    border: 1px solid #e1e1e1;
+}
+.contact-card h3,
+.contact-card p {
+    text-align: center
+}
