@@ -12,31 +12,39 @@ function MainContent() {
             <CurrentTime />
 
             <ContactCard
-                name="John Doe"
-                imgUrl="http://lorempixel.com/500/280/animals/1"
-                phone="+32 2 226 53 53"
-                email="john@mail.com"
+                contact = {{
+                    name: "John Doe",
+                    imgUrl: "http://lorempixel.com/500/280/animals/1",
+                    phone: "+32 2 226 53 53",
+                    email: "john@mail.com"
+                }}
             />
 
             <ContactCard
-                name="Mary Pop"
-                imgUrl="http://lorempixel.com/500/280/animals/2"
-                phone="+32 2 226 45 99"
-                email="mary@mail.com"
+                contact = {{
+                    name: "Mary Pop",
+                    imgUrl: "http://lorempixel.com/500/280/animals/2",
+                    phone: "+32 2 226 45 99",
+                    email: "mary@mail.com"
+                }}
             />
 
             <ContactCard
-                name="Jack Pixel"
-                imgUrl="http://lorempixel.com/500/280/animals/3"
-                phone="+32 2 226 33 88"
-                email="jack@mail.com"
+                contact = {{
+                    name: "Jack Pixel",
+                    imgUrl: "http://lorempixel.com/500/280/animals/3",
+                    phone: "+32 2 226 33 88",
+                    email: "jack@mail.com"
+                }}
             />
 
             <ContactCard
-                name="Betty Dol"
-                imgUrl="http://lorempixel.com/500/280/animals/4"
-                phone="+32 2 226 12 34"
-                email="betty@mail.com"
+                contact = {{
+                    name: "Betty Dol",
+                    imgUrl: "http://lorempixel.com/500/280/animals/4",
+                    phone: "+32 2 226 12 34",
+                    email: "betty@mail.com"
+                }}
             />
         </main>
     )
