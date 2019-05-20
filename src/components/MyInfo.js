@@ -6,7 +6,7 @@ function MyInfo() {
 
     return (
         <div>
-            <h4>{firstName + ' ' + lastName}</h4>
+            <h4>{`${firstName} ${lastName}`}</h4>
             <p>Junior Web Developer</p>
             <ol>
                 <li>ReactJS</li>
