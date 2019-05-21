@@ -19,11 +19,11 @@ function MainContent() {
         )
     })
 
-    const schoolProductComponent = schoolProductsData.map((product) => {
+    const schoolProductComponents = schoolProductsData.map((item) => {
         return (
             <SchoolProduct
-                key={product.id}
-                product={product}
+                key={item.id}
+                product={item}
             />
         )
     })
@@ -72,7 +72,7 @@ function MainContent() {
 
             {jokeComponents}
 
-            {schoolProductComponent}
+            {schoolProductComponents}
         </main>
     )
 }
