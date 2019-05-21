@@ -64,6 +64,9 @@ function MainContent() {
                 question="What do you call a sheep with no head and no legs"
                 punchline="A cloud!"
             />
+            <Joke
+                punchline="It's hard to explain puns to kleptomaniacs because they take things literaly."
+            />
         </main>
     )
 }
