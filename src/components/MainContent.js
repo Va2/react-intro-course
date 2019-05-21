@@ -4,8 +4,19 @@ import MyInfo from './MyInfo';
 import CurrentTime from './CurrentTime';
 import ContactCard from './ContactCard';
 import Joke from './Joke';
+import jokesData from '../jokesData';
 
 function MainContent() {
+    const jokeComponents = jokesData.map((joke) => {
+        return (
+            <Joke
+                key={joke.id}
+                question={joke.question}
+                punchline={joke.punchline}
+            />
+        )
+    })
+
     return (
         <main>
             <h3>Main Content</h3>
@@ -48,25 +59,7 @@ function MainContent() {
                 }}
             />
 
-            <Joke
-                punchline="It's hard to explain puns to kleptomaniacs because they take things literaly."
-            />
-            <Joke
-                question="What do you call an alligator in a vest"
-                punchline="An Investigator..."
-            />
-            <Joke
-                question="Where do crayons go on vacation"
-                punchline="Color-ado!"
-            />
-            <Joke
-                question="What do you call a computer floating in the ocean"
-                punchline="A Dell Rolling in the Deep."
-            />
-            <Joke
-                question="What do you call a sheep with no head and no legs"
-                punchline="A cloud!"
-            />
+            {jokeComponents}
         </main>
     )
 }
