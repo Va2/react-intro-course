@@ -5,6 +5,8 @@ import CurrentTime from './CurrentTime';
 import ContactCard from './ContactCard';
 import Joke from './Joke';
 import jokesData from '../jokesData';
+import SchoolProduct from './SchoolProduct';
+import schoolProductsData from '../schoolProductsData';
 
 function MainContent() {
     const jokeComponents = jokesData.map((joke) => {
@@ -13,6 +15,17 @@ function MainContent() {
                 key={joke.id}
                 question={joke.question}
                 punchline={joke.punchline}
+            />
+        )
+    })
+
+    const schoolProductComponent = schoolProductsData.map((product) => {
+        return (
+            <SchoolProduct
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                description={product.description}
             />
         )
     })
@@ -60,6 +73,8 @@ function MainContent() {
             />
 
             {jokeComponents}
+
+            {schoolProductComponent}
         </main>
     )
 }
