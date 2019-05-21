@@ -3,6 +3,7 @@ import React from 'react';
 import MyInfo from './MyInfo';
 import CurrentTime from './CurrentTime';
 import ContactCard from './ContactCard';
+import Joke from './Joke';
 
 function MainContent() {
     return (
@@ -45,6 +46,23 @@ function MainContent() {
                     phone: "+32 2 226 12 34",
                     email: "betty@mail.com"
                 }}
+            />
+
+            <Joke
+                question="What do you call an alligator in a vest"
+                punchline="An Investigator..."
+            />
+            <Joke
+                question="Where do crayons go on vacation"
+                punchline="Color-ado!"
+            />
+            <Joke
+                question="What do you call a computer floating in the ocean"
+                punchline="A Dell Rolling in the Deep."
+            />
+            <Joke
+                question="What do you call a sheep with no head and no legs"
+                punchline="A cloud!"
             />
         </main>
     )
