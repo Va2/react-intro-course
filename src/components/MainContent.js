@@ -8,6 +8,7 @@ import jokesData from '../jokesData';
 import SchoolProduct from './SchoolProduct';
 import schoolProductsData from '../schoolProductsData';
 import ImageCard from './ImageCard';
+import Counter from './Counter';
 
 function MainContent() {
     const jokeComponents = jokesData.map((joke) => {
@@ -76,6 +77,8 @@ function MainContent() {
             {schoolProductComponents}
 
             <ImageCard />
+
+            <Counter />
         </main>
     )
 }
