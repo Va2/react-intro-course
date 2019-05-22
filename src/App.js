@@ -15,7 +15,6 @@ class App extends Component {
     }
 
     render() {
-        // let wordDisplay = this.state.isLoggedIn === false ? "out" : "in";
         let wordDisplay = this.state.isLoggedIn ? "in" : "out";
 
         return (
