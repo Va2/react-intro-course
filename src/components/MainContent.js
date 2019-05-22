@@ -77,7 +77,6 @@ function MainContent() {
             {schoolProductComponents}
 
             <ImageCard />
-
             <Counter />
         </main>
     )
