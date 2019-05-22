@@ -37,7 +37,10 @@ class App extends Component {
                     <h4>and is currently logged {wordDisplay}.</h4>
                 </div>
 
-                <Conditional isLoading={this.state.isLoading} />
+                {this.state.isLoading ?
+                    <h1>Loading...</h1> : 
+                    <Conditional />
+                }
                 <Footer />
             </div>
         )
