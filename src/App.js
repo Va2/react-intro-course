@@ -4,7 +4,7 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Conditional from './components/Conditional';
-import LoginBtn from './components/LoginBtn';
+import StarWarsApi from './components/StarWarsApi';
 
 class App extends Component {
     constructor() {
@@ -73,6 +73,8 @@ class App extends Component {
                     <h3>{displayText}</h3>
                     <button onClick={this.handleClick}>{btntext}</button>
                 </div>
+
+                <StarWarsApi />
 
                 <Footer />
             </div>
