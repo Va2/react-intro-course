@@ -5,6 +5,7 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Conditional from './components/Conditional';
 import StarWarsApi from './components/StarWarsApi';
+import FormName from './components/FormName';
 
 class App extends Component {
     constructor() {
@@ -75,6 +76,8 @@ class App extends Component {
                 </div>
 
                 <StarWarsApi />
+
+                <FormName />
 
                 <Footer />
             </div>
